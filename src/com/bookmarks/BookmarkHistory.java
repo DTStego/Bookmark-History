@@ -85,6 +85,7 @@ public class BookmarkHistory
             try
             {
                 Desktop.getDesktop().open(new File(Bookmark.BOOKMARKFOLDER.getLocation()));
+                System.exit(0);
             } catch (IOException ioException)
             {
                 System.out.println("Bookmark Backups folder does not exist. Fatal error!");
